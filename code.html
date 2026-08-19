@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam Registration</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+        body { background-color: #f4f7f6; display: flex; justify-content: center; padding: 40px 20px; }
+        .form-container { background-color: #ffffff; width: 100%; max-width: 650px; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h2 { color: #2c3e50; text-align: center; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        fieldset { border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; }
+        legend { font-weight: bold; color: #3498db; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: 600; }
+        input, select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        .radio-group { display: flex; gap: 15px; }
+        button { width: 100%; background-color: #3498db; color: white; padding: 12px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <h2>Exam Registration</h2>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone" pattern="[0-9]{10}">
+        </fieldset>
+        <fieldset>
+            <legend>Preferences</legend>
+            <select><option>Select Course</option></select>
+            <input type="date">
+        </fieldset>
+        <fieldset>
+            <legend>Uploads</legend>
+            <input type="file" accept=".jpg, .png">
+            <label><input type="checkbox" required> Accept Terms</label>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>
